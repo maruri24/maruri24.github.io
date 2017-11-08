@@ -1,10 +1,6 @@
 $(document).ready(function(){
-	setTimeout(function(){
-		var height_screen = $(window).height();
-		$('header').css('min-height', height_screen);
-		$('header').css('transition', 'opacity .2s');
-		$('header').css('opacity', '1');
-	},200);
+	var height_screen = $(window).height();
+	$('header').css('min-height', height_screen);
 	
 	setTimeout(function(){
 		$('.nav-content').css('transition', 'opacity .3s');
