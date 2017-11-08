@@ -89,7 +89,7 @@ section article{
 }
 section article div.saludo{
 	width: 100%;
-	padding: 100px 0px;
+	padding: 100px 0px 30px 0px;
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -137,6 +137,7 @@ section article figure img{
 	}
 	section article div.saludo{
 		max-width: 500px;
+		padding: 100px 0px;
 	}
 	section article figure{
 		margin-left: 30px;
