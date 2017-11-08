@@ -22,6 +22,9 @@ header div.nav-content span#btn-menu{
 header div.nav-content nav{
 	width: 90%;
 	margin:auto;
+	position: fixed;
+	left: 0;
+	right: 0;
 }
 header div.nav-content nav ul{
 	width: 100%;
@@ -120,6 +123,12 @@ section article figure{
 section article figure img{
 	width: 100%;
 }
+
+section#portafolio{
+	background: rgba(166, 166, 166, 1);
+	height: 1000px;
+}
+
 @media only screen and (min-width: 720px){
 	section article{
 		width: 70%;
@@ -131,7 +140,6 @@ section article figure img{
 		max-width: 500px;
 	}
 }
-
 @media only screen and (min-width: 984px){
 	section article{
 		width: 90%;
