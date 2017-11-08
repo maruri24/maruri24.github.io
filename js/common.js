@@ -30,8 +30,20 @@ $(document).ready(function(){
 
 });
 
-function deslizar_abajo(){
+function deslizar_inicio(){
+	$('html, body').animate({
+        scrollTop: $("header").offset().top
+    }, 2000);
+}
+
+function deslizar_about_us(){
 	$('html, body').animate({
         scrollTop: $("#contenido").offset().top
+    }, 2000);
+}
+
+function deslizar_portafolio(){
+	$('html, body').animate({
+        scrollTop: $("#portafolio").offset().top
     }, 2000);
 }
