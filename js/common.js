@@ -12,7 +12,7 @@ $(document).ready(function(){
 		var header_text_height = $('.header-text').height();
 		var nav_height = $('.nav-content').height();
 
-		var padding_height = (header_height - header_text_height - nav_height) / 2;
+		var padding_height = (header_height - header_text_height + nav_height) / 2;
 
 		$('.header-text').css('transition', 'opacity .2s');
 		$('.header-text').css('opacity', '1');
@@ -27,35 +27,7 @@ $(document).ready(function(){
 		$("div.saludo").css('padding', padding_saludo+ 'px 0px');
 	}
 
-	/*Imagenes*/
-	$("#k7").css('background','url("img/k7.jpg")');
-	$("#k7").css('background-position','top left');
-	$("#k7").css('background-repeat','no-repeat');
-	$("#k7").css('background-size','cover');
-	$("#lanashuso").css('background','url("img/lanashuso.jpg")');
-	$("#lanashuso").css('background-position','center center');
-	$("#lanashuso").css('background-repeat','no-repeat');
-	$("#lanashuso").css('background-size','cover');
-	$("#legben").css('background','url("img/legben.jpg")');
-	$("#legben").css('background-position','center center');
-	$("#legben").css('background-repeat','no-repeat');
-	$("#legben").css('background-size','cover');
-	$("#ingear").css('background','url("img/ingear.jpg")');
-	$("#ingear").css('background-position','center center');
-	$("#ingear").css('background-repeat','no-repeat');
-	$("#ingear").css('background-size','cover');
-	$("#pixelbits").css('background','url("img/pixelbits.jpg")');
-	$("#pixelbits").css('background-position','center center');
-	$("#pixelbits").css('background-repeat','no-repeat');
-	$("#pixelbits").css('background-size','cover');
-	$("#verduleriaencasa").css('background','url("img/verduleriaencasa.jpg")');
-	$("#verduleriaencasa").css('background-position','center center');
-	$("#verduleriaencasa").css('background-repeat','no-repeat');
-	$("#verduleriaencasa").css('background-size','cover');
-
-
-
-
+	setear_imagenes_portafolio();
 	resize_trabajo();
 });
 
@@ -85,20 +57,49 @@ function resize_trabajo(){
 	}
 }
 
+function setear_imagenes_portafolio(){
+	/*Imagenes*/
+	$("#k7").css('background','url("img/k7.jpg")');
+	$("#k7").css('background-position','top left');
+	$("#k7").css('background-repeat','no-repeat');
+	$("#k7").css('background-size','cover');
+	$("#lanashuso").css('background','url("img/lanashuso.jpg")');
+	$("#lanashuso").css('background-position','center center');
+	$("#lanashuso").css('background-repeat','no-repeat');
+	$("#lanashuso").css('background-size','cover');
+	$("#legben").css('background','url("img/legben.jpg")');
+	$("#legben").css('background-position','center center');
+	$("#legben").css('background-repeat','no-repeat');
+	$("#legben").css('background-size','cover');
+	$("#ingear").css('background','url("img/ingear.jpg")');
+	$("#ingear").css('background-position','center center');
+	$("#ingear").css('background-repeat','no-repeat');
+	$("#ingear").css('background-size','cover');
+	$("#pixelbits").css('background','url("img/pixelbits.jpg")');
+	$("#pixelbits").css('background-position','center center');
+	$("#pixelbits").css('background-repeat','no-repeat');
+	$("#pixelbits").css('background-size','cover');
+	$("#verduleriaencasa").css('background','url("img/verduleriaencasa.jpg")');
+	$("#verduleriaencasa").css('background-position','center center');
+	$("#verduleriaencasa").css('background-repeat','no-repeat');
+	$("#verduleriaencasa").css('background-size','cover');
+
+}
+
 function deslizar_inicio(){
 	$('html, body').animate({
         scrollTop: $("header").offset().top
-    }, 2000);
+    }, 1000);
 }
 
 function deslizar_about_us(){
 	$('html, body').animate({
         scrollTop: $("#contenido").offset().top
-    }, 2000);
+    }, 1000);
 }
 
 function deslizar_portafolio(){
 	$('html, body').animate({
         scrollTop: $("#portafolio").offset().top
-    }, 2000);
+    }, 1000);
 }
