@@ -79,13 +79,14 @@ header div.header-text span img{
 
 section{
 	width: 100%;
-	height: 1000px;
+	/*height: 1000px;*/
 	background: rgba(46, 46, 46, 1);
 }
 section article{
 	width: 90%;
 	max-width: 1080px;
 	margin: auto;
+	margin-bottom: 100px;
 }
 section article div.saludo{
 	width: 100%;
@@ -134,6 +135,7 @@ section article figure img{
 @media only screen and (min-width: 984px){
 	section article{
 		width: 90%;
+		margin-bottom: 0px;
 	}
 	section article div.saludo{
 		max-width: 500px;

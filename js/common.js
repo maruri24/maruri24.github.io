@@ -18,6 +18,16 @@ $(document).ready(function(){
 		$('.header-text').css('opacity', '1');
 		$('.header-text').css('padding', padding_height+ 'px 0px');
 	},500);
+
+	if($(window).width() >= 984){
+		$('#contenido').css('min-height', height_screen);
+		var contenido_height = $('#contenido').height();
+		var saludo_height = $("div.saludo").height();
+		var padding_saludo = (contenido_height - saludo_height) / 2;
+		$("div.saludo").css('padding', padding_saludo+ 'px 0px');
+	}
+	
+
 });
 
 function deslizar_abajo(){
