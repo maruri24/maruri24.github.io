@@ -1,19 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
+	<!-- FONTs -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet"> 
+
 	<!-- JS -->
+	<script src="https://use.fontawesome.com/3170d6921b.js"></script>
 
 	<!-- CSS -->
-
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/common.css">
 
 
 	<title>Lucas Maruri Vivanco | Web Solutions</title>
+
+
 </head>
 <body>
-	<h1>hello world!</h1>
-	<p>Saludos</p>
+	<header>
+		<div class="nav-content">
+			<span id="btn-menu" class="menu-bar" onclick="animacion_menu(this)"><i class="fa fa-bars" aria-hidden="true"></i></span>
+
+			<nav>
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Portafolio</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header-text">
+			<h1>Lucas Maruri Vivanco</h1>
+			<p>¿Buscas renovar tu sitio web? ¿Aun no tienes uno?</p>
+			<span onclick="deslizar_abajo()"><img src="img/down.png" alt="desplazar"></span>
+		</div>
+	</header>
+
+	<section>
+		<article id="contenido">
+			
+		</article>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/common.js"></script>
 </body>
 </html>

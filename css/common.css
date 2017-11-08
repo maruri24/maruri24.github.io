@@ -1,0 +1,80 @@
+header{
+	width: 100%;
+	background: url('../img/bk.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	opacity: 0;
+}
+header div.nav-content{
+	width: 100%;
+	height: 50px;
+	background: linear-gradient(top, rgba(40,40,40,1) , rgba(40,40,40,0));
+	padding-top: 20px;
+	opacity: 0;
+}
+header div.nav-content span#btn-menu{
+	display: none;
+}
+header div.nav-content nav{
+	width: 90%;
+	margin:auto;
+}
+header div.nav-content nav ul{
+	width: 100%;
+	text-align: right;
+	margin: 0;
+	padding: 0;
+}
+header div.nav-content nav ul li{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px 10px;
+	text-transform: uppercase;
+}
+header div.nav-content nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+header div.header-text{
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+}
+header div.header-text h1{
+	margin: 0;
+	padding: 0;
+	color: white;
+	text-shadow: 1px 1px 10px rgba(0,0,0,.7),
+	 			-1px -1px 10px rgba(0,0,0,.7);
+	font-family: 'Amatic SC', cursive;
+	font-size: 4em;
+}
+header div.header-text p{
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.6em;
+	text-shadow: 1px 1px 5px rgba(0,0,0,.9),
+				-1px -1px 5px rgba(0,0,0,.9);
+}
+header div.header-text span{
+	width: 70px;
+	height: 70px;
+	display: block;
+	margin: auto;
+	cursor: pointer;
+	transition: transform .2s;
+}
+header div.header-text span:hover{
+	transform: scale(1.1);
+}
+header div.header-text span img{
+	width: 100%;
+}
+
+section{
+	width: 100%;
+	height: 1000px;
+}
