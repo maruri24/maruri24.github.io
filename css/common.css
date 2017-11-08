@@ -126,8 +126,39 @@ section article figure img{
 
 section#portafolio{
 	background: rgba(166, 166, 166, 1);
-	height: 1000px;
 }
+section#portafolio article{
+	width: 100%;
+	max-width: inherit;
+}
+section#portafolio article div.trabajo{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	border: 1px solid black;
+	box-sizing: border-box;
+	margin: 2px 0px;
+	position: relative;
+}
+section#portafolio article div.trabajo:after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	opacity: .2;
+}
+section#portafolio article div.trabajo span.title{
+	font-family: 'Amatic SC', cursive;
+	font-size: 4em;
+	z-index: 11;
+	position: relative;
+	text-shadow: 1px 1px 10px rgba(0,0,0,.9);
+}
+
 
 @media only screen and (min-width: 720px){
 	section article{
