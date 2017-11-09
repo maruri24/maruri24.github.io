@@ -137,15 +137,17 @@ section#portafolio{
 section#portafolio article{
 	width: 100%;
 	max-width: inherit;
+	position: relative;
 }
 section#portafolio article div.trabajo{
 	display: inline-block;
+	vertical-align: top;
 	color: white;
 	text-align: center;
-	border: 1px solid black;
-	box-sizing: border-box;
 	margin: 2px 0px;
 	position: relative;
+	cursor: pointer;
+	z-index: 5;
 }
 section#portafolio article div.trabajo:after{
 	content: '';
@@ -156,12 +158,12 @@ section#portafolio article div.trabajo:after{
 	top: 0;
 	left: 0;
 	z-index: 1;
-	opacity: .2;
+	opacity: .5;
 }
 section#portafolio article div.trabajo span.title{
-	font-family: 'Amatic SC', cursive;
-	font-size: 4em;
-	z-index: 10;
+	font-family: 'Unica One', cursive;
+	font-size: 2em;
+	z-index: 5;
 	position: relative;
 	text-shadow: 1px 1px 10px rgba(0,0,0,.9);
 }
@@ -183,6 +185,11 @@ section#portafolio article div.trabajo span.title{
 	}
 	section article div.saludo{
 		max-width: 500px;
+	}
+}
+@media only screen and (min-width: 790px){
+	section#portafolio article div.trabajo span.title{
+		font-size: 2.5em;
 	}
 }
 @media only screen and (min-width: 984px){
