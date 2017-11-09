@@ -55,17 +55,20 @@ header div.header-text h1{
 	margin: 0;
 	padding: 0;
 	color: white;
-	text-shadow: 1px 1px 5px rgba(0,0,0,.7),
-	 			-1px -1px 5px rgba(0,0,0,.7);
-	font-family: 'Amatic SC', cursive;
-	font-size: 4em;
+	text-shadow: 1px 1px 5px rgba(0,0,0,.4),
+	 			-1px -1px 5px rgba(0,0,0,.4);
+	font-family: 'Unica One', cursive;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+	font-size: 6em;
 }
 header div.header-text p{
+	margin-top: 0px;
 	color: white;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 1.6em;
-	text-shadow: 1px 1px 5px rgba(0,0,0,.7),
-				-1px -1px 5px rgba(0,0,0,.7);
+	text-shadow: 1px 1px 5px rgba(0,0,0,.4),
+				-1px -1px 5px rgba(0,0,0,.4);
 }
 header div.header-text span{
 	width: 70px;
