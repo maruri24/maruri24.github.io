@@ -92,7 +92,7 @@ function deslizar_inicio(){
     }, 1000);
 }
 
-function deslizar_about_us(){
+function deslizar_about_me(){
 	$('html, body').animate({
         scrollTop: $("#contenido").offset().top
     }, 1000);
