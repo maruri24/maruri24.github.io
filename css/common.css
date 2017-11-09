@@ -60,7 +60,7 @@ header div.header-text h1{
 	font-family: 'Unica One', cursive;
 	text-transform: uppercase;
 	margin-bottom: 0px;
-	font-size: 6em;
+	font-size: 4.6em;
 }
 header div.header-text p{
 	margin-top: 0px;
@@ -165,9 +165,16 @@ section#portafolio article div.trabajo span.title{
 	position: relative;
 	text-shadow: 1px 1px 10px rgba(0,0,0,.9);
 }
-
+@media only screen and (min-width: 450px){
+	header div.header-text h1{
+		font-size: 6em;
+	}
+}
 
 @media only screen and (min-width: 720px){
+	header div.header-text h1{
+		font-size: 7em;
+	}
 	section article{
 		width: 70%;
 		max-width: fit-content;
