@@ -60,17 +60,20 @@ $(function(){
 					$(".trabajo").addClass("no_agrandar");
 					$(element_id).removeClass("no_agrandar");
 
+
+					mostrar_texto_portafolio(element_id);
 				}
 				else{
 					$(element_id).css('transition','width 1s');
 					$(element_id).css('width',static_tamano+'px');
 
+					esconder_texto_portafolio(element_id);				
 					setTimeout(function(){
 						$(element_id).css('position','relative');
 						$(element_id).css('z-index','5');
 						$("#pixelbits").css('margin-left', '0');
 						$(element_id).removeClass("grande");
-						$(".trabajo").removeClass("no_agrandar");						
+						$(".trabajo").removeClass("no_agrandar");
 					},1000);
 				}	
 			}
@@ -124,10 +127,14 @@ $(function(){
 					$(element_id).addClass("grande");
 					$(".trabajo").addClass("no_agrandar");
 					$(element_id).removeClass("no_agrandar");
+
+					mostrar_texto_portafolio(element_id);
 				}
 				else{
 					$(element_id).css('transition','width 1s');
 					$(element_id).css('width',static_tamano+'px');
+
+					esconder_texto_portafolio(element_id);
 
 					setTimeout(function(){
 						$("#pixelbits").css('margin-right','0px');
@@ -181,6 +188,8 @@ $(function(){
 					$(element_id).css('margin-left', element_marge +'px');
 					$("#verduleriaencasa").css('margin-left', margen +'px');
 					$("#ingear").css('position','absolute');
+					$("#ingear").css('bottom','0');
+					$("#ingear").css('left','0');
 
 					$(element_id).css('position','absolute');
 					$(element_id).css('bottom','0');
@@ -240,6 +249,36 @@ $(function(){
 	});
 });
 
+function mostrar_texto_portafolio(element){
+	var t = element;
+	var title = $(t).children('.title');
+	var text = $(t).children('p');
+	$(title).css('transition','opacity .2s');
+	$(title).css('opacity','0');
+	setTimeout(function(){
+		$(title).css('display','none');
+		$(text).css('display','inherit');
+		var margin_text = ($(t).height() - $(text).height()) / 2;
+		$(text).css('margin',margin_text+'px 0px');
+		$(text).css('margin-left','100px');
+		$(text).css('transition','opacity .2s');
+		$(text).css('opacity','1');
+	},1000);
+}
+
+function esconder_texto_portafolio(element){
+	var t = element;
+	var title = $(t).children('.title');
+	var text = $(t).children('p');
+	$(text).css('transition','opacity .2s');
+	$(text).css('opacity','0');
+	setTimeout(function(){
+		$(text).css('display','none');
+		$(title).css('display','inherit');
+		$(title).css('transition','opacity .2s');
+		$(title).css('opacity','1');
+	},200);
+}
 
 function resize_trabajo(){
 	var width_total = $(window).width();

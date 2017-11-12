@@ -167,6 +167,47 @@ section#portafolio article div.trabajo span.title{
 	position: relative;
 	text-shadow: 1px 1px 10px rgba(0,0,0,.9);
 }
+section#portafolio article div.trabajo p{
+	display: none;
+}
+/**
+ * INSTAGRID
+ */
+
+section article.insGrid{
+	width: 90%;
+	max-width: 1080px;
+	margin: auto;
+	text-align: left;
+}
+section article.insGrid h2{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 2em;
+	text-transform: uppercase;
+	color: white;
+	text-align: left;
+	margin-left: 100px;
+}
+section article.insGrid p{
+	text-align: left;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: justify;
+}
+section article.insGrid  h2 span{
+	color: rgba(89, 89, 89, 1);
+	font-weight: 300;
+}
+
+section article.insGrid #ody{
+	margin-bottom: 30px;
+}
+
+section.siguiente{
+	clear: both;
+	height: 100px;
+}
+
 @media only screen and (min-width: 450px){
 	header div.header-text h1{
 		font-size: 6em;
@@ -190,6 +231,19 @@ section#portafolio article div.trabajo span.title{
 @media only screen and (min-width: 790px){
 	section#portafolio article div.trabajo span.title{
 		font-size: 2.5em;
+	}
+}
+@media only screen and (min-width: 900px){
+	section#portafolio article div.trabajo p{
+		margin: 0;
+		padding: 0;
+		opacity: 0;
+		position: relative;
+		z-index: 5;
+		max-width: 40%;
+		margin: auto;
+		text-align: justify;
+		font-family: 'Open Sans Condensed', sans-serif;
 	}
 }
 @media only screen and (min-width: 984px){
