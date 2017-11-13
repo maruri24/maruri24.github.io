@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+	<!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/prefixfree.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/common.css">
+
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Economica" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+
+	<title>Lucas web Solution</title>
+</head>
+<body>
+	<header>
+		<div class="nav-content">
+			<span id="btn-menu" class="menu-bar" onclick="animacion_menu(this)"><i class="fa fa-bars" aria-hidden="true"></i></span>
+
+			<nav>
+				<ul>
+					<li><a href="javascript:void(0)" onclick="deslizar_inicio()">Inicio</a></li>
+					<li><a href="javascript:void(0)" onclick="deslizar_about_me()">About me</a></li>
+					<li><a href="javascript:void(0)" onclick="deslizar_portafolio()">Portafolio</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="carousel">
+			<div class="slide s1 img1">
+				<div class="text">
+					<h2>¿Buscas renovar tu web?</h2>
+					<span>¡Contactame!</span>
+					<!-- <span class="bajar" onclick="deslizar_about_me()"><img src="img/down.png" alt="bajar"></span> -->
+				</div>
+			</div>
+			<div class="slide s2 img2">
+				<div class="text">
+					<h2>Lucas Maruri Vivanco</h2>
+					<span>desarrollador web</span>
+					<!-- <span class="bajar" onclick="deslizar_about_me()"><img src="img/down.png" alt="bajar"></span> -->
+				</div>
+			</div>
+			<div class="slide s3 img3">
+				<div class="text">
+					<h2>Página web a tu medida</h2>
+					<span>100% personalzido</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem porro obcaecati, sapiente distinctio quas quia beatae, aliquam ratione reiciendis expedita quisquam, quasi aspernatur illo sequi id. Rerum cum eveniet obcaecati.</p>	
+					<!-- <span class="bajar" onclick="deslizar_about_me()"><img src="img/down.png" alt="bajar"></span> -->
+
+				</div>
+			</div>
+			<div class="arrows">
+				<span class="arrow left" onclick="prev()">&lt;</span>
+				<span class="arrow right" onclick="next()">&gt;</span>
+			</div>
+		</div>
+	</header>
+
+	<section class="about_me">
+		<article id="contenido">
+			<div class="saludo">
+				<h2>About me <span>Conóceme</span></h2>
+				<p>Soy Lucas Maruri Vivanco, desarrollador web Full-Stack con más de 3 años de experiencia. Mi trabajo se carcateriza por cumplir completamente las necesidades de los clientes y entregarles siempre el mejor servicio. Es por esto que estoy constanmente aprendiendo sobre las nuevas tecnologías disponibles en el mercado. Actualmente estoy realizando mi práctica profesional en IBM Chile, empresa de éxito mundial en el área informática.</p>
+				<p>En esta página encontrarás mi portafolio, el cual contiene algunos de los trabajos que he realizado durante el último tiempo. Además, obtendrás información sobre las tecnologías que utilizo para lograr un trabajo de excelencia.</p>
+				<p>Si estás interesado en desarrollar una página web o mejorar la tuya no dudes en contactarme!</p>
+			</div>
+			<figure>
+				<img src="img/about.png" alt="about img">
+			</figure>
+		</article>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
