@@ -49,7 +49,6 @@ header div.carousel div.arrows span{
 	text-transform: uppercase;
 	cursor: pointer;
 }
-
 header div.carousel div.arrows span.left{
 	left: 0px;
 	padding-left: 20px;
@@ -137,7 +136,9 @@ header div.carousel div.slide span.bajar img{
 	width: 100%;
 }
 
-
+/**
+ * ABOUT_ME
+ */
 section{
 	width: 100%;
 }
@@ -181,7 +182,39 @@ section article#contenido figure img{
 	width: 100%;
 }
 
+/**
+ * CARACTERISTICAS
+ */
+section article#caracteristicas{
+	background: #00c2e5;
+	width: 100%;
+	text-align: center;
+	padding: 40px 0px;
+}
+section article#caracteristicas div.cuadrado{
+	width: 220px;
+	margin: 20px 20px;
+	display: inline-block;
+	vertical-align: top;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+section article#caracteristicas div.cuadrado img{
+	width: 120px;
+	margin: auto;
+}
+section article#caracteristicas div.cuadrado h3{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.8em;
+	margin: 5px;
+	margin-top: 10px;
 
+}
+section article#caracteristicas div.cuadrado p{
+	text-align: justify;
+	margin: 0;
+}
 
 @media only screen and (min-width: 720px){
 	section article#contenido{

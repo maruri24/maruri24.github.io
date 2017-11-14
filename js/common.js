@@ -6,8 +6,6 @@ $(document).ready(function(){
 	$('header div.carousel div.arrows').css('min-height', height_screen+'px');
 	$('header div.carousel div.arrows span').css('line-height', height_screen+'px');
 
-
-	
 	var header_height = $('header').height();
 	var nav_height = $('.nav-content').height();
 	$('.slide').each(function(){
@@ -34,7 +32,7 @@ $(function(){
 	});
 	interval = setInterval(function(){
 		next();
-	},4000);
+	},6000);
 });
 
 function next(){
