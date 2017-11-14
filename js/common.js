@@ -97,7 +97,8 @@ function deslizar_inicio(){
     }, 1000);
 }
 function deslizar_servicios(){
+	var nav_height = $('.nav-content').height();
 	$('html, body').animate({
-        scrollTop: $("#servicios").offset().top
+        scrollTop: $("#servicios").offset().top - nav_height
     }, 1000);
 }
