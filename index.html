@@ -32,7 +32,7 @@
 					<li><a href="javascript:void(0)" onclick="deslizar_about_me()">About me</a></li>
 					<li><a href="javascript:void(0)" onclick="deslizar_servicios()">Servicios</a></li>
 					<li><a href="javascript:void(0)" onclick="deslizar_portafolio()">Portafolio</a></li>
-					<li><a href="#">Contacto</a></li>
+					<li><a href="javascript:void(0)" onclick="deslizar_contacto()">Contacto</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -41,23 +41,19 @@
 				<div class="text">
 					<h2>¿Buscas renovar tu web?</h2>
 					<span>¡Contactame!</span>
-					<!-- <span class="bajar" onclick="deslizar_about_me()"><img src="img/down.png" alt="bajar"></span> -->
 				</div>
 			</div>
 			<div class="slide s2 img2">
 				<div class="text">
 					<h2>Lucas Maruri Vivanco</h2>
 					<span>desarrollador web</span>
-					<!-- <span class="bajar" onclick="deslizar_about_me()"><img src="img/down.png" alt="bajar"></span> -->
 				</div>
 			</div>
 			<div class="slide s3 img3">
 				<div class="text">
 					<h2>Página web a tu medida</h2>
 					<span>100% personalizado</span>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem porro obcaecati, sapiente distinctio quas quia beatae, aliquam ratione reiciendis expedita quisquam, quasi aspernatur illo sequi id. Rerum cum eveniet obcaecati.</p>	
-					<!-- <span class="bajar" onclick="deslizar_about_me()"><img src="img/down.png" alt="bajar"></span> -->
-
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem porro obcaecati, sapiente distinctio quas quia beatae, aliquam ratione reiciendis expedita quisquam, quasi aspernatur illo sequi id. Rerum cum eveniet obcaecati.</p>
 				</div>
 			</div>
 			<div class="arrows">
@@ -141,6 +137,34 @@
 				<span class="title" >PopGraphics</span>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam necessitatibus architecto molestias odit numquam tempore ratione ullam est voluptate vel omnis voluptas a tempora rem iure, cumque placeat, amet ipsum.</p>
 			</div>
+		</article>
+	</section>
+
+	<section id="contacto">
+		<article>
+			<form action="" method="POST" id="form_contacto">
+				<div class="texto-contacto">
+					<h2>Pongámonos en contacto</h2>
+					<p>Si deseas tener tu propia página web, renovar la actual, agregarle un nuevo módulo o simplemente
+					tienes dudas, envíame un correo a través del siguiente formulario. Rellena todos los campos solicitados
+					y luego preciona el botón enviar. Me pondré en contacto contigo lo antes posible.</p>
+				</div>
+				<div class="input-group">
+					<input type="text" name="nombre" placeholder="Nombre" required="">
+				</div>
+				<div class="input-group doble">
+					<input type="email" name="correo" placeholder="Correo electrónico" required="">
+				</div>
+				<div class="input-group doble">
+					<input type="text" name="telefono" placeholder="Teléfono" >
+				</div>
+				<div class="input-group txtarea">
+					<textarea name="mensaje" id="mensaje" placeholder="Mensaje" required=""></textarea>
+				</div>
+				<div class="boton">
+					<input type="submit" value="Enviar" name="enviar">
+				</div>
+			</form>
 		</article>
 	</section>
 	

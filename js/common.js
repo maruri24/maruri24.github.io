@@ -5,6 +5,8 @@ $(document).ready(function(){
 	$('header div.carousel div.slide').css('min-height', height_screen+'px');
 	$('header div.carousel div.arrows').css('min-height', height_screen+'px');
 	$('header div.carousel div.arrows span').css('line-height', height_screen+'px');
+	$('#contacto').css('min-height', height_screen - $('.nav-content').outerHeight()+'px');
+
 
 	var header_height = $('header').height();
 	var nav_height = $('.nav-content').height();
@@ -19,13 +21,25 @@ $(document).ready(function(){
 		var n_height_screen = height_screen - $('.nav-content').outerHeight();
 		$('#portafolio').css('min-height', n_height_screen);
 	}
-
+	if($(window).width() < 984){
+		$('#form_contacto').css('padding','50px 0px');
+	}
 	if($(window).width() >= 984){
 		$('#contenido').css('min-height', height_screen);
 		var contenido_height = $('#contenido').height();
 		var saludo_height = $("div.saludo").height();
 		var padding_saludo = (contenido_height - saludo_height) / 2;
 		$("div.saludo").css('padding', padding_saludo+ 'px 0px');
+
+		var contacto_height = $('#contacto').height();
+		var form_height = $('#form_contacto').height();
+		var padding_contacto = (contacto_height - form_height) / 2;
+		if(padding_contacto < 40){
+			console.log("asdfas"+padding_contacto);			
+			$('#form_contacto').css('padding','40px 0px');
+		} else{
+			$('#form_contacto').css('padding', padding_contacto+'px 0px');
+		}
 	}
 
 	setear_imagenes_portafolio();
@@ -227,5 +241,11 @@ function deslizar_portafolio(){
 	var nav_height = $('.nav-content').outerHeight();
 	$('html, body').animate({
         scrollTop: $("#portafolio").offset().top - nav_height
+    }, 1000);
+}
+function deslizar_contacto(){
+	var nav_height = $('.nav-content').outerHeight();
+	$('html, body').animate({
+        scrollTop: $("#contacto").offset().top - nav_height
     }, 1000);
 }
