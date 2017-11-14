@@ -96,7 +96,7 @@ function deslizar_inicio(){
         scrollTop: $("header").offset().top
     }, 1000);
 }
-function deslizar_inicio(){
+function deslizar_servicios(){
 	$('html, body').animate({
         scrollTop: $("#servicios").offset().top
     }, 1000);
