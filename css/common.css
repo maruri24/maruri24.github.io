@@ -96,6 +96,9 @@ header div.carousel div.img3{
 	background-size: cover;
 	background-attachment: fixed;
 }
+header div.carousel div.slide div.text{
+	transition: all .5s;
+}
 header div.carousel div.slide div.text h2{
 	margin:0px;
 	font-family: 'Lato', sans-serif;
