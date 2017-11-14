@@ -6,7 +6,7 @@ header div.nav-content{
 	height: 40px;
 	padding-top: 20px;
 	position: fixed;
-	z-index: 11;
+	z-index: 15;
 	transition: all .5s;
 }
 header div.nav-con-color{
@@ -100,13 +100,13 @@ header div.carousel div.slide div.text h2{
 	margin:0px;
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
-	font-weight: 100;
+	font-weight: 700;
 	font-size: 4em;
 }
 header div.carousel div.slide div.text span{
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 100;
 	font-size: 3em;
 	margin-bottom: 30px;
 }
@@ -214,12 +214,57 @@ section article#servicios div.cuadrado h3{
 	font-size: 1.8em;
 	margin: 5px;
 	margin-top: 10px;
-
 }
 section article#servicios div.cuadrado p{
 	text-align: justify;
 	margin: 0;
 }
+/**
+ * PORTAFOLIO
+ */
+
+
+section#portafolio{
+	margin-top: 2px;
+	height: 100%;
+}
+section#portafolio article{
+	width: 100%;
+	max-width: inherit;
+	position: relative;
+}
+section#portafolio article div.trabajo{
+	display: inline-block;
+	vertical-align: top;
+	color: white;
+	text-align: center;
+	margin: 2px 0px;
+	position: relative;
+	cursor: pointer;
+	z-index: 5;
+}
+section#portafolio article div.trabajo:after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	opacity: .5;
+}
+section#portafolio article div.trabajo span.title{
+	font-family: 'Unica One', cursive;
+	font-size: 2em;
+	z-index: 5;
+	position: relative;
+	text-shadow: 1px 1px 10px rgba(0,0,0,.9);
+}
+section#portafolio article div.trabajo p{
+	display: none;
+}
+
 
 @media only screen and (min-width: 720px){
 	section article#contenido{
