@@ -188,15 +188,15 @@ section article#contenido figure img{
 }
 
 /**
- * CARACTERISTICAS
+ * SERVICIOS
  */
-section article#caracteristicas{
+section article#servicios{
 	background: #00c2e5;
 	width: 100%;
 	text-align: center;
 	padding: 40px 0px;
 }
-section article#caracteristicas div.cuadrado{
+section article#servicios div.cuadrado{
 	width: 220px;
 	margin: 20px 20px;
 	display: inline-block;
@@ -204,11 +204,11 @@ section article#caracteristicas div.cuadrado{
 	color: white;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
-section article#caracteristicas div.cuadrado img{
+section article#servicios div.cuadrado img{
 	width: 120px;
 	margin: auto;
 }
-section article#caracteristicas div.cuadrado h3{
+section article#servicios div.cuadrado h3{
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 1.8em;
@@ -216,7 +216,7 @@ section article#caracteristicas div.cuadrado h3{
 	margin-top: 10px;
 
 }
-section article#caracteristicas div.cuadrado p{
+section article#servicios div.cuadrado p{
 	text-align: justify;
 	margin: 0;
 }

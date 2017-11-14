@@ -30,7 +30,6 @@ $(window).scroll(function(){
 	var current_position = $(window).scrollTop();
 
 	if( current_position >= top_about_me){
-		console.log(current_position);
 		$('header div.nav-content').addClass('nav-con-color');
 	}
 	if( current_position < top_about_me){
@@ -95,5 +94,10 @@ function deslizar_about_me(){
 function deslizar_inicio(){
 	$('html, body').animate({
         scrollTop: $("header").offset().top
+    }, 1000);
+}
+function deslizar_inicio(){
+	$('html, body').animate({
+        scrollTop: $("#servicios").offset().top
     }, 1000);
 }
