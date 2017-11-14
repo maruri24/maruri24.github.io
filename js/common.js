@@ -25,6 +25,20 @@ $(document).ready(function(){
 
 });
 
+$(window).scroll(function(){
+	var top_about_me = $("#contenido").offset().top;
+	var current_position = $(window).scrollTop();
+
+	if( current_position >= top_about_me){
+		console.log(current_position);
+		$('header div.nav-content').addClass('nav-con-color');
+	}
+	if( current_position < top_about_me){
+		$('header div.nav-content').removeClass('nav-con-color');
+	}
+
+});
+
 $(function(){
 	var interval = null;
 	$('header').on('mousemove', function(){
