@@ -95,7 +95,7 @@ function esconder_texto_portafolio(element){
 
 $(function(){
 	var interval = null;
-	$('header').on('mousemove', function(){
+	$('header').on('mouseover',function(){
 		clearInterval(interval);
 	});
 	interval = setInterval(function(){
